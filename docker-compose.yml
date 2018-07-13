@@ -10,27 +10,15 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: 123456
-  redis:
-    image: redis:5.0-rc3
-    command: ["redis-server", "--appendonly", "yes"]
-    restart: always
-    hostname: redis
-    ports:
-      - 6379:6379
-    volumes:
-      - redis_data:/usr/local/etc/redis
   api_server:
-    image: python:3.7.0-stretch
-    depends_on:
-      - mongo
+    build: ./api_server
     ports:
-      - "6000:6000"
+     - "5000:5000"
+  redis:
+    image: "redis:alpine"
   web_server:
-    image: nginx:latest
+    build: ./web_server
     ports:
-      - "8080:80"
+      - "80:80"
 volumes:
   mongo_data:
-  redis_data:
-  api_server:
-  web_server:

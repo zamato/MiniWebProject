@@ -1,8 +1,11 @@
 <template>
-    <l-map :zoom="zoom" :center="center">
-        <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
-        <l-marker :lat-lng="marker"></l-marker>
-    </l-map>
+    <div class="w-100 h-100">
+        <search></search>
+        <l-map :zoom="zoom" :center="center">
+            <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+            <l-marker :lat-lng="marker"></l-marker>
+        </l-map>
+    </div>
 </template>
 
 <script>
@@ -18,7 +21,7 @@ L.Icon.Default.mergeOptions({
 
 import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
-
+import Search from "./search.vue";
 
 export default {
     data(){
@@ -33,7 +36,8 @@ export default {
     components: { 
         LMap,
         LTileLayer,
-        LMarker
+        LMarker,
+        Search
     },
     methods:{
         initCurrentPosition(position){

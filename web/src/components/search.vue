@@ -20,23 +20,20 @@ export default {
     onSearch() {
       // search
       this.$http
-        .get(
-          "https://maps.googleapis.com/maps/api/geocode/json?address=" +
-            this.inputData +
-            "&key=AIzaSyBGIA6vuByllFOeHv0buIlHy9UZqOsSM04"
-        )
+        .get("https://maps.googleapis.com/maps/api/geocode/json?address=" + this.inputData + "&key=AIzaSyBGIA6vuByllFOeHv0buIlHy9UZqOsSM04")
         .then(
           result => {
             console.log(result);
-            var loc = result.results[0].geometry.location;
             this.$http.post(
-              "http://localhost:5000/api/v1/getInfoTwitter",
-              loc,
-              params => {
-
+              "http://localhost:5000/api/v1/getInfoTwitter",{
+                  text: this.inputData,
+                  geo: result.body.results[0].geometry.location
+              },
+              result => {
+                  console.log(result);
               },
               error => {
-                  
+                  console.log(error);
               }
             );
           },

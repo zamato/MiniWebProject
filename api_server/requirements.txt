@@ -1,2 +1,5 @@
 flask
 redis
+tweepy
+flask-cors
+pymongo

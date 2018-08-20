@@ -1,0 +1,1 @@
+docker exec miniwebproject_mongo_1 mongo < mongoSetup.js

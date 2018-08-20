@@ -1,12 +1,10 @@
-import redis
 from controllers.twitterController import TwitterController
 from flask import Flask
 from flask_cors import CORS
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
-cache = redis.Redis(host='redis', port=6379)
-
+#cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+CORS(app)
 TwitterController(app)
 
 @app.route("/")

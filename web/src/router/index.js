@@ -5,11 +5,12 @@ import Index from '@/components/index'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Index',
-      component: Index
-    }
-  ]
+    mode: 'history',
+    routes: [
+        {
+            path: '/',
+            name: 'Index',
+            component: Index
+        }
+    ]
 })

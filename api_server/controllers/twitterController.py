@@ -14,8 +14,8 @@ class TwitterController:
 
             if self.isConnect:
                 #search
-                req_data = request.get_json()
-                return self.twitterApi.search(req_data["text"], req_data["geo"])
+                reqData = request.get_json()
+                return self.twitterApi.search(reqData["text"], reqData["geo"])
             else:
                 return 'error to connect Twitter'
  

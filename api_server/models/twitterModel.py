@@ -37,14 +37,19 @@ class TwitterModel:
                 result = api.search(searchData)
             else:
                 temp = str(geo["lat"])+","+str(geo["lng"])+","+radius
-                result = api.search(searchData, geocode=temp )
+                result = api.search(searchData, rpp=50,geocode=temp )
 
             if len(result) > 0:
                 temp = []
                 for target_list in result:
+                    print("text => ",target_list._json['text'],"\n")
                     print("geo => ",target_list._json['geo'],"\n")
                     if target_list._json['geo'] is not None:
-                        temp.append(target_list._json['geo']['coordinates'])
+                        data = {
+                            "text": target_list._json['text'],
+                            "coordinates": target_list._json['geo']['coordinates'],
+                        }
+                        temp.append(data)
 
                 print("====================================================================","\n")
 

@@ -21,13 +21,10 @@ How to setup for dev website
 
 ```mermaid
 graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
+A[server1] -- Link text --> B(abcasd)
+A --> C(server2)
 B --> D{Rhombus}
-C [data] --> D
-
-A[Square Rect]
-A[Square Rect]
+C --> F(test) --> E
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzExMzcyNDVdfQ==
+eyJoaXN0b3J5IjpbLTYwNjA3NDE0MF19
 -->

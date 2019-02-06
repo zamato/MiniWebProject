@@ -24,7 +24,9 @@ graph LR
 A[server1] -- Link text --> B(abcasd)
 A --> C(server2)
 B --> D{Rhombus}
-C --> F(test) --> E
+C --> F(test)
+F --> E(aaaaaa)
+E --> D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNjA3NDE0MF19
+eyJoaXN0b3J5IjpbLTIxNDE1Mzc4NzhdfQ==
 -->

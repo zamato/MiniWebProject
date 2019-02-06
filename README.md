@@ -24,7 +24,10 @@ graph LR
 A[Square Rect] -- Link text --> B((Circle))
 A --> C(Round Rect)
 B --> D{Rhombus}
-C --> D --> 
+C [data] --> D
+
+A[Square Rect]
+A[Square Rect]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODY4NDk0MV19
+eyJoaXN0b3J5IjpbLTE2MzExMzcyNDVdfQ==
 -->

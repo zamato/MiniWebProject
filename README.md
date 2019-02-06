@@ -12,13 +12,5 @@ How to setup for dev website
 
 1.  go to root of directory folders and go to webtype “npm install” for download package
 3.  type npm run dev for start dev server
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5NDg3Njg5XX0=
--->
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vTI6XhCJ8aVvx74TPlUpqLKoUrMV5x5EJaJBDEMIB5T2eixXjeWXTgtw84vyFCHNL3MLhASy8_NxPNP/pub?w=960&amp;h=720">

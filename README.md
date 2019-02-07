@@ -13,4 +13,4 @@ How to setup for dev website
 1.  go to root of directory folders and go to webtype “npm install” for download package
 3.  type npm run dev for start dev server
 
-<img src="https://docs.google.com/a/wisesight.com/drawings/d/e/2PACX-1vTI6XhCJ8aVvx74TPlUpqLKoUrMV5x5EJaJBDEMIB5T2eixXjeWXTgtw84vyFCHNL3MLhASy8_NxPNP/pub?w=960&amp;h=720">
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vTI6XhCJ8aVvx74TPlUpqLKoUrMV5x5EJaJBDEMIB5T2eixXjeWXTgtw84vyFCHNL3MLhASy8_NxPNP/pub?w=960&amp;h=720">

@@ -12,4 +12,3 @@ How to setup for dev website
 
 1.  go to root of directory folders and go to webtype “npm install” for download package
 3.  type npm run dev for start dev server
-<embed src="https://www.w3schools.com/tags/tag_embed.asp">
